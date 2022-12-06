@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: url(../image/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg);
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+    background-size: cover;
+    background-position: center;
+
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.overlay-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.449);
+    z-index: 1;
+}
+
+/* header  */
+
+header {
+    text-align: center;
+    
+    z-index: 100;
+}
+
+.login-title {
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 9px;
+    text-shadow: 4px 4px 3px rgb(244, 160, 129);
+    word-spacing: 4px;
+    font-weight: 500;
+    font-family: 'Josefin Slab', serif;
+}
+
+/* header mobile  */
+
+@media (max-width: 490px) {
+    .login-title {
+        font-size: 1rem;
+    }
+}
+
+/* section  */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 35%;
+
+
+    z-index: 100;
+
+}
+
+.form-login {
+    width: 100%;
+    height: 100%;
+
+    background-color:rgba(255, 255, 255, 0.173);
+    padding: 50px 30px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1.5em;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 4px #000;
+}
+
+.input_user-name {
+    width: 100%;
+
+    
+}
+
+.block_user-name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.block_user-name input {
+    width: 88%;
+    background-color: rgba(0, 0, 0, 0.505);
+    border: none !important;
+    font-size: 1.2rem;
+
+    padding-left: 20px;
+    transition: all ease-in-out 0.2s;
+    color: #fff;
+
+    z-index: 100;
+    font-family: 'Josefin Slab', serif;
+
+
+}
+
+.block_user-name input::placeholder {
+    color: rgb(182, 178, 178) !important;
+    font-family: 'Josefin Slab', serif;
+
+}
+
+.block_user-name input:focus-visible {
+    outline:rgb(244, 160, 129) solid 3.5px;
+}
+
+.block_user-name label {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 100;
+    
+    font-size: 1.3rem;
+    color: rgb(182, 178, 178);
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: transparent;
+
+    transition: all linear 0.2s;
+    pointer-events: none;
+}
+
+.block_user-name input:focus + label, .block_user-name input:valid + label {
+    top: -15px;
+    left: 20px;
+    background-color: #fff;
+    color: rgb(244, 160, 129);
+    font-size: 1rem;
+    padding: 0px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+.block_user-name i {
+    width: 10%;
+    padding: 5px 0px 6px 0;
+
+
+    /* background-color: rgb(25, 183, 191); */
+    color: #fff;
+
+    font-size: 2.5rem;
+    text-align: right;
+
+}
+ 
+.block_user-password {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.block_user-password input {
+    width: 88%;
+    background-color: rgba(0, 0, 0, 0.505);
+    border: none !important;
+    font-size: 1.2rem;
+    padding-left: 20px;
+    transition: all ease-in-out 0.2s;
+    color: #fff;
+    font-family: 'Josefin Slab', serif;
+
+
+}
+
+.block_user-password label {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 100;
+    
+    font-size: 1.3rem;
+    color: rgb(182, 178, 178);
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: transparent;
+
+    transition: all linear 0.2s;
+    pointer-events: none;
+}
+
+.block_user-password input:focus + label, .block_user-password input:valid + label {
+    top: -15px;
+    left: 20px;
+    background-color: #fff;
+    color: rgb(244, 160, 129);
+    font-size: 1rem;
+    padding: 0px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.block_user-password input::placeholder {
+    color: rgb(182, 178, 178) !important;
+    font-family: 'Josefin Slab', serif;
+
+}
+
+.block_user-password input:focus-visible {
+    outline:rgb(244, 160, 129) solid 3.5px;
+}
+
+.block_user-password span {
+    position: absolute;
+    right: 15%;
+    top: 25%;
+
+
+}
+
+.block_user-password span i {
+    font-size: 1rem;
+}
+
+.block_user-password span i:hover {
+    cursor: pointer;
+}
+
+.block_user-password i {
+    width: 10%;
+    padding: 5px 0px 6px 0;
+
+    /* background-color: rgb(25, 183, 191); */
+    color: #fff;
+
+    font-size: 2.5rem;
+    text-align: right;
+
+}
+
+
+.block-submit {
+    margin-top: 30px;
+}
+
+.block-submit button {
+    padding: 10px 90px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.505);
+    color: #fff;
+    font-family: 'Josefin Slab', serif;
+
+
+    border: 3px solid transparent !important ;
+    /* border-radius: 10px; */
+    transition: all linear 0.3s;
+}
+
+.block-submit button:hover {
+    border: 3px solid rgb(244, 160, 129) !important ;
+    
+}
+
+.block-register {
+    margin-top: 20px;    
+}
+
+.block-register a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    letter-spacing: 3px;
+    text-shadow: 6px 5px 6px #000;
+    transition: all linear 0.2s;
+}
+
+.block-register a:hover {
+    color: rgb(244, 160, 129);
+}
+
+/* section mobile  */
+
+@media (max-width: 490px) {
+    section {
+        width: 85%;
+    }
+
+    .form-login {
+        height: 90%;
+        width: 100%;
+    }
+
+    .form-login h4 {
+        font-size: 0.8rem;
+    }
+
+    .block_user-name input, .block_user-password input {
+        width: 85%;
+        font-size: 1rem;
+    }
+
+    .block_user-name label {
+        font-size: 1rem;
+        top: 14px;
+    }
+
+    .block_user-name input:focus + label, .block_user-name input:valid + label{
+        font-size: 0.8rem;
+    }
+
+    .block_user-password label {
+        font-size: 1rem;
+        top: 14px;
+    }
+
+    .block_user-password input:focus + label, .block_user-password input:valid + label{
+        font-size: 0.8rem;
+    }
+
+    .block_user-password span {
+        right: 19%;
+    }
+
+    .block-submit button {
+        padding: 4px 50px;
+        font-size: 1.2rem;
+    }
+
+    .block-register a {
+        font-size: 1rem;
+    }
+}
+
+/* footer  */
+footer {
+    z-index: 100;
+    color: #fff;
+    font-family: 'Josefin Slab', serif;
+}
+
+footer h5 {
+    font-weight: bold !important;
+    font-size: 1.3rem;
+}
+
+footer h5 a {
+    text-decoration: none;
+    color: rgb(244, 160, 129);
+
+}
+
+@media (max-width: 490px) {
+    footer h5 {
+        font-size: 0.7rem;
+    }
+}
+
+
+

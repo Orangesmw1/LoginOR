@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <!-- font icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- font google  -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700" rel="stylesheet">
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="../css/styles-reg.css">
+</head>
+<body>
+    <!-- overlay bg  -->
+    <div class="overlay-bg"></div>
+
+    <!-- section register  -->
+    <section class="bg-image d-flex align-items-center justify-content-center vh-100 ">
+        <div class="mask h-75  d-flex flex-column align-items-center justify-content-center">
+            <!-- title register  -->
+            <h1 class="form-register-title text-center pb-2">Orangesmw Register Form</h1>
+
+            <!-- form register  -->
+            <div class="block-card form-register py-2" style="border-radius: 15px;">
+                <div class="card-body">      
+                    <h4>Fill out the form below to register</h4>
+
+                    <!-- name register  -->
+                    <div class="form-outline p-2 pb-3  ">
+                            <input type="text" id="inputNameRegister" required  class="form-control form-control-lg" />
+                            <label for="">Your Name</label>
+                    </div>
+
+                    <!-- email register  -->
+                    <div class="form-outline p-2 pb-3 ">
+                            <input type="text" id="inputEmailRegister"  class="form-control form-control-lg" required />
+                            <label for="">Your Email</label>
+                    </div>
+
+                    <!-- pass register  -->
+                    <div class="form-outline p-2 pb-3 formPassWordRegister ">
+                        <input type="password" id="inputPasswordRegister" required  class="form-control form-control-lg" />
+                        <label for="">Your Password</label>
+                        <span id="block-eyes">
+                            <i class="fa fa-eye-slash d-block " id="showPassword"></i>
+                            <i class="fa fa-eye d-none " id="hidePassword"></i>
+                        </span>
+                    </div>
+
+                    <!-- repeat pass register  -->
+                    <div class="form-outline p-2 pb-3 formRepeatPassWordRegister ">
+                        <input type="password" id="inputRepeatPasswordRegister" required class="form-control form-control-lg" />
+                        <label for="">Repeat Your Password</label>
+                        <span id="block-eyes-repeat">
+                            <i class="fa fa-eye-slash d-block" id="showRepeatPassword"></i>
+                            <i class="fa fa-eye d-none" id="hideRepeatPassword"></i>
+                        </span>
+                    </div>
+
+                    <!-- form check  -->
+                    <div class="form-check text-center w-100 ">
+                            <input class="form-check-input mt-2 " type="checkbox"  id="checkBox" />
+                            <label class="form-check-label pb-3" for="form2Example3">
+                                I agree all statements in 
+                                <a href="#!" class="text-body">
+                                    <u>Terms of service</u>
+                                </a>
+                            </label>
+                    </div>
+
+                    <!-- btn-register  -->
+                    <div class="d-flex justify-content-center register">
+                        <button type="button" class="btn  btn-lg  text-body btn-register" >Register</button>
+                    </div>
+
+                    <!-- switch login  -->
+                    <p class="login-here text-center  mt-3 mb-0">
+                        Have already an account? 
+                        <a  class="fw-bold text-body switch-login">
+                            <u>Login here</u>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer register -->
+    <footer class="mb-2">
+        <h5 class="copyright"><i class="fa fa-copyright"></i> 2022 Orangesmw Login Form. All rights reserved | Design by <a href="">Orangesmw</a></h5>
+    </footer>
+
+
+
+    <!-- axios api  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <!-- link js  -->
+    <script src="../js/main2.js"></script>
+
+    <!-- jquery  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+</body>
+</html>
