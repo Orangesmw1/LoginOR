@@ -47,10 +47,9 @@ btnLogin.addEventListener("click",function() {
     }
 })
 
-
 // event switchRegister 
 switchRegister.addEventListener("click",function() {
-    window.location = "indexReg.html";
+    window.location = "/html/indexReg.html";
 })
 
 // switch eyes password  

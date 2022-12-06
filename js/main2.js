@@ -123,7 +123,7 @@ btnHideRepeatPass.addEventListener("click",function(){
 })
 
 switchLogin.addEventListener("click",function() {
-    window.location = "index.html";
+    window.location = "../index.html";
 })
 
 
